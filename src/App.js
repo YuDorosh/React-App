@@ -30,19 +30,19 @@ const App = () => {
   ]);
 
   // Add Task
-  const addTask = async (task) => {
+  const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1;
     const newTask = { id, ...task };
     setTasks([...tasks, newTask]);
   };
 
   // Delete Task
-  const deleteTask = async (id) => {
+  const deleteTask = (id) => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
   };
 
   // Toggle Reminder
-  const toggleReminder = async (id) => {
+  const toggleReminder = () => {
     console.log("----");
   };
 
